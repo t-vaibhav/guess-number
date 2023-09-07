@@ -19,7 +19,14 @@ export default function Game() {
     range = "(0-100)";
   }
   const numericGuess = parseInt(guess, 10); // Parse guess as a number
-
+  let digit = 0;
+  if (numericLevel === 1) {
+    digit = 10;
+  } else if (numericLevel === 2) {
+    digit = 50;
+  } else {
+    digit = 100;
+  }
   useEffect(() => {
     const numericGuess = parseInt(guess, 10); // Parse guess as a number
 
@@ -43,7 +50,7 @@ export default function Game() {
   }
   let flag = false;
 
-  if (guess.length !== 0) {
+  if (guess.length !== 0 && numericGuess > 0 && numericGuess <= digit) {
     flag = true;
   }
   function handleSubmit() {
