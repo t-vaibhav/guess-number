@@ -45,7 +45,7 @@ export default function Result({ number, guess }) {
   let styling = "";
   if (guessed === "Correct") {
     styling = "text-4xl text-green-500 font-semibold";
-    msg = "Congratulations! You guessed the correct number😎😎";
+    msg = "Congratulations! You guesses the correct number😎😎";
   } else if (guessed === "very close") {
     styling = "text-2xl sm:text-4xl text-orange-500 font-semibold";
     msg = "Awwww! You just missed by margins🥹🥹";
@@ -54,7 +54,7 @@ export default function Result({ number, guess }) {
     msg = "This was just close enough🥲🥲";
   } else {
     styling = "text-2xl sm:text-4xl text-red-700 font-semibold";
-    msg = "Your guess was far away🙄🙄";
+    msg = "You guess was far away🙄🙄";
   }
 
   return (
