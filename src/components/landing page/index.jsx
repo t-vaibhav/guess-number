@@ -33,7 +33,7 @@ export default function Home() {
       <div className="space-y-3 sm:space-y-5">
         <h1 className="text-3xl sm:text-4xl font-semibold">Hello Friend!</h1>
         <h1 className="text-3xl sm:text-4xl font-semibold">
-          Please Enter Your Name?
+          Please Enter Your Name!
         </h1>
         <div className="py-5">
           <input
