@@ -44,7 +44,8 @@ export default function Game() {
   let msg = "";
   error ? (msg = "Please Enter a valid number in the given range") : (msg = "");
   const dispatch = useDispatch();
-
+  const currentDateAndTime = new Date();
+  console.log(currentDateAndTime);
   function handleChange(event) {
     dispatch(setGuess(event.target.value));
   }
